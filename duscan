@@ -580,4 +580,3 @@ fix_perms(html_fh.name)
 
 print os.getcwd()
 os.chdir(start_dir)
-

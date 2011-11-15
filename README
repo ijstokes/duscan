@@ -1,25 +1,25 @@
-Up to date documentation embedded in duscan.py, accessible by:
+Up to date documentation embedded in duscan accessible by:
 
-./duscan.py -h
+    duscan -h
 
 Uses Python os.stat to do a "du" like scan of a portion of the filesystem,
 aggregating results at each level in the hierarchy.  These can be made
 available in ".du" files in each directory, with details about the content in
 that directory and also in all sub-directories.  Optionally HTML output
-can be produced, and if the Python "pylab" module is generated then pie charts
-can be created as well.  If you just want summary results for all content this
-is also possible.
+can be produced, and if the Python "pylab" module is available then pie charts
+can be created as well (--img).  If you just want summary results for all
+content this is also possible.
 
-duscan.py
 Filesystem scanning utility
---------------------------
-duscan.py is designed to scan a filesystem to catalogue where the memory is
+---------------------------
+duscan is designed to scan a filesystem to catalogue where the memory is
 being used. In each directory it write a small .du file with that directory's
 information. In the top directory, it also writes .du_file, .du_dir, .du_user,
 and .du_group, which contain information about the whole directory tree.
 
 Running duscan
-The basic duscan command is python duscan.py. It will run on python 2.4 through
+
+The basic duscan command is python duscan It will run on python 2.4 through
 2.6, but has not been tested on earlier or later versions. This will generate a
 .du file in  every directory and .du_file/dir/user/group in the top directory. 
 
